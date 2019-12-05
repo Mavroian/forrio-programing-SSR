@@ -1,5 +1,6 @@
 
 const path = require('path');
+const webpackNodeExternals = require("webpack-node-externals")
 
 module.exports = {
   // inform webpack we are bulding a bundle
@@ -33,5 +34,6 @@ module.exports = {
         }
       },
     ]
-  }
+  },
+  externals: [webpackNodeExternals()]
 }
