@@ -1,5 +1,4 @@
 const path = require('path');
-const webpackNodeExternals = require("webpack-node-externals")
 module.exports = {
 
   //root file 
@@ -30,5 +29,4 @@ module.exports = {
       },
     ]
   },
-  externals: [webpackNodeExternals()]
 }
