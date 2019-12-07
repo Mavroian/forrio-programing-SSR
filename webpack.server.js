@@ -33,7 +33,28 @@ module.exports = {
           ]
         }
       },
-    ]
+
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'isomorphic-style-loader',
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              importLoaders: 1,
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'sass-loader'
+          }
+        ]
+      }
+    ],
   },
+
   externals: [webpackNodeExternals()]
 }
