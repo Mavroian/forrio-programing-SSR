@@ -1,8 +1,8 @@
 // fetch the creators
 
 import axios from "axios";
-export const FETCH_USERS = "fetch_users";
-export const fetchUsers = () => async dispatch => {
+export const FETCH_CREATORS = "fetch_creators";
+export const fetchCreators = () => async dispatch => {
 
   const res = await axios.get('https://api.foriio.com/api/v1/promoted/users').then(response => {
     return response.data
@@ -11,7 +11,7 @@ export const fetchUsers = () => async dispatch => {
   });
 
   dispatch({
-    type: FETCH_USERS,
+    type: FETCH_CREATORS,
     payload: res.users
   });
 }
