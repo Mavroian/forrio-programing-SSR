@@ -1,3 +1,4 @@
+
 const path = require('path');
 module.exports = {
 
@@ -27,6 +28,28 @@ module.exports = {
           ]
         }
       },
-    ]
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              importLoaders: 1,
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'sass-loader'
+          }
+        ]
+      },
+    ],
+
   },
+
+
 }
