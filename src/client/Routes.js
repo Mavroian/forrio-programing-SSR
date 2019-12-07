@@ -1,13 +1,16 @@
 import React from "react";
-import { Route } from "react-router-dom"
-import Homepage from "./components/homepage.component";
-import UsersList from "../client/components/usersList.component"
+import { Route, Switch } from "react-router-dom"
+import Homepage from "./components/homepage/homepage.component";
+import CreatorsList from "./components/creator-list/creatorList.component"
+import Profile from "./components/profile/profile"
 
 export default () => {
   return (
     <div>
-      <Route exact path="/" component={Homepage} />
-      <Route exact path="/users" component={UsersList} />
+      <Switch>
+        <Route exact path="/" component={CreatorsList} />
+        <Route exact path="/:username" render={(props) => <Profile props={props} />} />
+      </Switch>
     </div>
   )
 }
