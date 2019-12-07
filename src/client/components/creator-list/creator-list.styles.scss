@@ -1,0 +1,25 @@
+.creator_talent_section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-left: -9px;
+    margin-right: -9px;
+    padding: 30px 0px;
+    border-bottom: 1px solid rgb(232, 232, 232);
+}
+
+.creator_work_image_table {
+    display: inline-flex;
+}
+
+.creator_talent_container {
+    display: flex;
+    flex-direction: column;
+    width: 1092px;
+    z-index: 0;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0px auto;
+}
