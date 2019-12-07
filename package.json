@@ -7,8 +7,8 @@
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
     "dev:server": "nodemon --watch build --exec \"node build/bundle.js\"",
-    "dev:build-server": "webpack --config webpack.server.js --watch",
-    "dev:build-client": "webpack --config webpack.client.js --watch"
+    "dev:build-server": "webpack --config webpack.server.js --watch --mode development",
+    "dev:build-client": "webpack --config webpack.client.js --watch --mode development"
   },
   "author": "",
   "license": "ISC",
@@ -24,11 +24,15 @@
     "babel-preset-stage-0": "^6.24.1",
     "compression": "1.7.0",
     "concurrently": "3.5.0",
+    "css-loader": "^3.2.1",
     "express": "^4.17.1",
     "express-http-proxy": "1.0.6",
+    "isomorphic-style-loader": "^5.1.0",
     "lodash": "4.17.4",
+    "node-sass": "^4.13.0",
     "nodemon": "^1.0.1",
     "npm-run-all": "4.1.1",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "5.2.0",
@@ -37,10 +41,13 @@
     "react-router-dom": "^5.1.2",
     "redux": "^4.0.4",
     "redux-thunk": "^2.3.0",
+    "sass-loader": "^8.0.0",
     "serialize-javascript": "1.4.0",
+    "style-loader": "^1.0.1",
     "superagent": "3.5.2",
-    "webpack": "3.5.6",
-    "webpack-dev-server": "2.8.2",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0",
     "webpack-merge": "4.1.0",
     "webpack-node-externals": "1.6.0"
   }
