@@ -11,7 +11,6 @@ class CreatorList extends Component {
     this.props.fetchCreators()
   }
   renderCreators() {
-    console.log(this.props, "from userlist")
     if (!this.props.creators.loaded) {
       return <div>Loading...</div>
     } else {
