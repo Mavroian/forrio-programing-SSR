@@ -1,0 +1,29 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+    color: rgb(34, 34, 34);
+}
+
+.separator {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: rgb(224, 224, 224);
+}
