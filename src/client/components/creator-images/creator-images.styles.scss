@@ -1,21 +1,19 @@
-.creator_work {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 160px;
-    height: 100px;
-}
-
 .creator_work_image_wrapper {
     display: flex;
     padding: 0px 10px;
+    width: 75%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 75%;
+    flex-direction: row;
 }
 
 .creator_work_image {
     padding-right: 10px;
     width: 200px;
     height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px 3px 5px;
+    border-radius: 5px;
+    overflow: hidden;
 }
