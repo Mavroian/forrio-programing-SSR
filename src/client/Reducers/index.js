@@ -2,7 +2,9 @@
 
 import { combineReducers } from "redux";
 import creatorsReducer from "./creatorsReducer";
+import worksReducer from "./worksReducers"
 
 export default combineReducers({
-  creators: creatorsReducer
+  creators: creatorsReducer,
+  works: worksReducer
 })
