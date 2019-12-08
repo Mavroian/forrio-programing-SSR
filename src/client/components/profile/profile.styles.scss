@@ -1,0 +1,156 @@
+// .layout_profile_container {
+//     display: flex;
+//     flex-direction: column;
+//     width: 1092px;
+//     z-index: 0;
+//     box-sizing: border-box;
+//     position: relative;
+//     margin: 0px auto;
+// }
+
+// .profile_container {
+//     position: relative;
+//     width: 100vw;
+//     left: 50%;
+//     right: 50%;
+//     margin-left: -50vw;
+//     margin-right: -50vw;
+//     margin-bottom: 70px;
+//     display: flex;
+//     flex-direction: column;
+//     overflow: hidden;
+// }
+
+// .profile_subcontainer {
+//     align-self: center;
+//     width: 1092px;
+//     -webkit-box-flex: 1;
+//     flex-grow: 1;
+//     margin: 0px auto;
+// }
+
+// // .profile_background {
+// //     position: absolute;
+// //     top: 0px;
+// //     left: 0px;
+// //     right: 0px;
+// //     bottom: 18px;
+// //     background-image: url(https://dyci7co52mbcc.cloudfront.net/store/e0268c5….jpg);
+// //     filter: blur(8px);
+// //     zoom: 2;
+// //     opacity: 0.7;
+// //     background-size: cover;
+// //     background-repeat: no-repeat;
+// //     background-position: center center;
+// // }
+
+// .profile_outerLayer {
+//     display: flex;
+//     flex-direction: row;
+//     padding-top: 70px;
+//     align-items: flex-start;
+//     -webkit-box-pack: center;
+//     justify-content: center;
+// }
+
+// .profile_profileContainer {
+//     display: flex;
+//     -webkit-box-align: center;
+//     align-items: center;
+//     flex-direction: column;
+// }
+
+// .profile_profile_outerLayer {
+//     display: flex;
+//     flex-direction: column;
+//     top: 0px;
+//     bottom: 0px;
+//     left: 0px;
+//     right: 0px;
+//     background-image: linear-gradient(rgba(255, 255, 255, 0.4) 0%, rgb(255, 255, 255) 60.95%);
+//     -webkit-box-pack: center;
+//     justify-content: center;
+//     -webkit-box-align: center;
+//     align-items: center;
+// }
+
+// .profile_profile_contentContainer {
+//     display: flex;
+//     flex-direction: row;
+//     max-width: 650px;
+//     width: 100%;
+// }
+
+.circle_avatar {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.profile_image {
+    display: flex;
+    position: relative;
+    flex: 1 1 0%;
+    z-index: 1;
+
+    .fit_image {
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        top: 0px;
+        object-fit: contain;
+        height: 150px;
+    }
+}
+
+.profile_right_container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.profile_name {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.profile_profile_name {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 38px;
+    color: rgb(34, 34, 34);
+    margin-right: 15px;
+    word-break: break-word;
+}
+
+.profilecontainer {
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    box-sizing: border-box;
+    background: rgb(214, 214, 227);
+    background: linear-gradient(180deg, rgba(214, 214, 227, 1) 8%, rgba(95, 157, 208, 0) 100%);
+}
+
+.profiletop {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.profilebottom {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.scrollable {
+    height: 300px;
+    overflow-y: scroll;
+}
