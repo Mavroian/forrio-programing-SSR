@@ -13,7 +13,6 @@ const port = 5000;
 app.use(express.static(`public`))
 app.get(`*`, (req, res) => {
   const store = createStore()
-  //logic for data into the sore
 
   const content = renderToString(
     <Provider store={store}>
