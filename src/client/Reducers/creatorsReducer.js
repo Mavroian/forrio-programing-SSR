@@ -1,5 +1,5 @@
 import { FETCH_CREATORS } from "../Actions/index";
-let initialState = { loaded: false, creators: [] }
+let initialState = { loaded: false, creators: [], works: {} }
 
 export default (state = initialState, action) => {
   switch (action.type) {
