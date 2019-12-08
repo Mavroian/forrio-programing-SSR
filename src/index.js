@@ -7,7 +7,8 @@ import Routes from "./client/Routes"
 import createStore from "./client/Store/createStore"
 import { Provider } from "react-redux";
 
-const app = express()
+const app = express();
+const port = 5000;
 
 app.use(express.static(`public`))
 app.get(`*`, (req, res) => {
@@ -23,19 +24,20 @@ app.get(`*`, (req, res) => {
   )
 
   const html = `
-    <html>
+  <html lang="en">
       <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
       </head>
       <body>
           <div id=root>${content}</div>
-          <script src="bundle.js"></script> 
+          <script src="/bundle.js"></script> 
       </body>
-    </html>
+  </html>
   `;
 
 
   res.send(html)
 })
-app.listen(5000, () => {
-  process.stdout.write("server running")
+app.listen(process.env.PORT || port, () => {
+  process.stdout.write(`Server running on port ${port}....\nPress Ctr+C to stop the server`)
 })
